@@ -369,7 +369,7 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Werror-implicit-function-declaration \
 		   -Wno-format-security \
 		   -fno-delete-null-pointer-checks \
-		   -O2 -mtune=cortex-a9 -mcpu=cortex-a9 \
+		   -O3 -mtune=cortex-a9 -mcpu=cortex-a9 -ffast-math -fprefetch-loop-arrays\
 		   -D__ARM_ARCH_7__ -D__ARM_ARCH_7A__ -D__VFP_FP__ -D__ARM_HAVE_VFP -mfloat-abi=hard -mfpu=vfpv3-d16
 
 KBUILD_AFLAGS_KERNEL :=
